@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-
+// gray --> bit bi = gi + bi-1
 int main(){
     int t;
     cin >> t;

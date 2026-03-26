@@ -11,11 +11,11 @@ int main(){
         string s;
         getline(cin , s);
 
-        bool ok = false; // ok = có ngoặc thừa
+        bool ok = false; 
 
         for(char c : s){
             if(c == ')'){
-                bool xet = false; // xet = có toán tử hay không
+                bool xet = false; 
 
                 while(!st.empty() && st.top() != '('){
                     if(st.top() == '+' || st.top() == '-' ||
@@ -27,7 +27,7 @@ int main(){
 
                 st.pop(); // pop '('
 
-                if(!xet){ // ❗ ngoặc thừa
+                if(!xet){ 
                     ok = true;
                     break;
                 }

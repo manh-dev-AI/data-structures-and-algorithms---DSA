@@ -20,7 +20,7 @@ int main(){
     int t;
     cin >> t;
     while(t--){
-        int n , k;
+        int n ;long long  k;
         cin >> n >> k;
         while(n > 2){
             if (k <= fibo[n-2]) n-=2;

@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+const long long MOD = 1e9 + 7;
+
+long long power(long long a,long long b){
+    long long res = 1;
+    while(b > 0){
+        if(b % 2 == 1){
+            res = (res * a) % MOD;
+        }
+        a = (a * a) % MOD;
+        b /= 2;
+    }
+    return res;
+}
+
+int main(){
+    while(true){
+        long long a , b;
+        cin >> a >> b;
+        if(a == b && b == 0){
+            break;
+        }
+        cout << power(a , b) << "\n";
+    }
+    return 0;
+}

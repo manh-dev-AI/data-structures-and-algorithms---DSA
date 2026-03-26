@@ -35,4 +35,3 @@ int main() {
     return 0;
 }
 
-//todo Nếu |X - a[i]| bằng nhau thì sắp xếp theo thứ tự xuất hiện
